@@ -2,7 +2,7 @@
   "name": "juce-color-picker",
   "displayName": "JUCE Color Picker",
   "description": "Shows VS Code color decorators for JUCE colour expressions in C++.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "srejv",
   "author": "Oscar Dragén",
   "icon": "icon.png",
