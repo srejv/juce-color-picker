@@ -2,6 +2,8 @@
 
 This extension adds native VS Code color decorators and color picker edits for literal JUCE colour expressions in C++.
 
+![Screenshot](screenshot.png)
+
 ## Supported syntax
 
 - `juce::Colour::fromRGB(r, g, b)`
@@ -19,17 +21,9 @@ The provider also accepts the unqualified `Colour` and `Colour::...` forms when 
 
 ## Current limits
 
-- Named colours such as `juce::Colours::red` are not supported in v1.
+- Named colours such as `juce::Colours::red` are not supported.
 - Macros, variables, constants, and arbitrary expressions are intentionally ignored.
 - The parser is text-based, not a full C++ parser. It handles multiline calls and basic comment/string skipping, but it does not evaluate C++ semantics.
-
-## Example
-
-```cpp
-inline const juce::Colour windowBackground = juce::Colour::fromRGB(232, 226, 213);
-```
-
-Open a C++ file containing supported JUCE colour literals and VS Code should show the inline swatch. Clicking the swatch opens the built-in color picker and rewrites the original JUCE expression in place.
 
 ## Build and install
 
@@ -60,15 +54,7 @@ npm run reinstall:vsix
 
 This project is licensed under the MIT License. See `LICENSE.txt`.
 
-## Changelog
-
-Release notes live in `CHANGELOG.md`.
-
 ## Project links
 
 - Repository: https://github.com/srejv/juce-color-picker
 - Issues: https://github.com/srejv/juce-color-picker/issues
-
-## Publishing
-
-To publish this to the VS Code Marketplace, replace the `publisher` value in `package.json` with your real publisher id first. The current value, `local`, is only suitable for local packaging and installation.
