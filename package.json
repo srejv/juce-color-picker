@@ -5,6 +5,7 @@
   "version": "0.0.1",
   "publisher": "local",
   "author": "srejv",
+  "icon": "icon.png",
   "license": "MIT",
   "repository": {
     "type": "git",

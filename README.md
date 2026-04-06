@@ -60,7 +60,15 @@ npm run reinstall:vsix
 
 This project is licensed under the MIT License. See `LICENSE.txt`.
 
+## Changelog
+
+Release notes live in `CHANGELOG.md`.
+
 ## Project links
 
 - Repository: https://github.com/srejv/juce-color-picker
 - Issues: https://github.com/srejv/juce-color-picker/issues
+
+## Publishing
+
+To publish this to the VS Code Marketplace, replace the `publisher` value in `package.json` with your real publisher id first. The current value, `local`, is only suitable for local packaging and installation.
