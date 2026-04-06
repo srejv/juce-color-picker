@@ -20,10 +20,14 @@
   "scripts": {
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
+    "package:vsix": "npm run compile && vsce package --allow-missing-repository",
+    "install:vsix": "node ./scripts/install-vsix.js",
+    "reinstall:vsix": "npm run package:vsix && npm run install:vsix",
     "pretest": "npm run compile",
     "test": "node ./out/test/runTest.js"
   },
   "devDependencies": {
+    "@vscode/vsce": "^3.6.1",
     "@types/mocha": "^10.0.10",
     "@types/node": "^22.14.1",
     "@types/vscode": "^1.96.0",

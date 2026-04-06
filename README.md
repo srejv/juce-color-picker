@@ -30,3 +30,28 @@ inline const juce::Colour windowBackground = juce::Colour::fromRGB(232, 226, 213
 ```
 
 Open a C++ file containing supported JUCE colour literals and VS Code should show the inline swatch. Clicking the swatch opens the built-in color picker and rewrites the original JUCE expression in place.
+
+## Build and install
+
+From the repository root:
+
+```bash
+npm install
+npm run package:vsix
+```
+
+That creates a `.vsix` package in the repo root.
+
+To install the generated package into VS Code from the same repo:
+
+```bash
+npm run install:vsix
+```
+
+To rebuild, repackage, and reinstall in one step:
+
+```bash
+npm run reinstall:vsix
+```
+
+`install:vsix` uses the `code` command-line tool. If that command is not available, open VS Code and run `Shell Command: Install 'code' command in PATH`, or install the VSIX manually from the Extensions view with `Install from VSIX...`.
