@@ -55,3 +55,7 @@ npm run reinstall:vsix
 ```
 
 `install:vsix` uses the `code` command-line tool. If that command is not available, open VS Code and run `Shell Command: Install 'code' command in PATH`, or install the VSIX manually from the Extensions view with `Install from VSIX...`.
+
+## License
+
+This project is licensed under the MIT License. See `LICENSE.txt`.
