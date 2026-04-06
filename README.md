@@ -59,3 +59,8 @@ npm run reinstall:vsix
 ## License
 
 This project is licensed under the MIT License. See `LICENSE.txt`.
+
+## Project links
+
+- Repository: https://github.com/srejv/juce-color-picker
+- Issues: https://github.com/srejv/juce-color-picker/issues

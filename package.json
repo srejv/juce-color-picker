@@ -4,12 +4,28 @@
   "description": "Shows VS Code color decorators for JUCE colour expressions in C++.",
   "version": "0.0.1",
   "publisher": "local",
+  "author": "srejv",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/srejv/juce-color-picker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/srejv/juce-color-picker/issues"
+  },
+  "homepage": "https://github.com/srejv/juce-color-picker#readme",
   "engines": {
     "vscode": "^1.96.0"
   },
   "categories": [
     "Programming Languages"
+  ],
+  "keywords": [
+    "juce",
+    "color",
+    "colour",
+    "cpp",
+    "vscode-extension"
   ],
   "activationEvents": [
     "onLanguage:cpp",
@@ -20,7 +36,7 @@
   "scripts": {
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
-    "package:vsix": "npm run compile && vsce package --allow-missing-repository",
+    "package:vsix": "npm run compile && vsce package",
     "install:vsix": "node ./scripts/install-vsix.js",
     "reinstall:vsix": "npm run package:vsix && npm run install:vsix",
     "pretest": "npm run compile",
